@@ -1,2 +1,2 @@
-# aulas-de-Python-
-códigos de python
+# aula_IFSP
+projetos de aula
