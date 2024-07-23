@@ -1,0 +1,3 @@
+let numero
+validarNumero() 
+    numero=
