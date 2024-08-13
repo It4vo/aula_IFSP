@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação de Populações~</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Item.7.4.1 -->
+    <div class="container">
+        <!--Item.7.4.2 -->
+        <h1>Comparação de Populações</h1>
+        <!--Item.7.4.3 -->
+        <form id="formCalculo">
+            <!--Item.7.4.4 -->
+            <div class="input">
+                <!--Item.7.4.5 -->
+                <label for="popA">População do país A:</label>
+                <!--Item.7.4.6 -->
+                <input type="number" id="popA" placeholder="População do país A">
+                <!--Item.7.4.7 -->
+                <label for="Taxa A">Taxa de crescimento anual do país</label>
+                <!--Item.7.4.8 -->
+                <input type="number" id="TaxaA" placeholder="Taxa de Crescimento do País A (%)">
+                <!--Item.7.4.9 -->
+                <label for="popB">População do País B:</label>
+                <input type="number" id="popB" placeholder="Ppopulação do país B">
+                <!--Item.7.4.10 -->
+                <label for="TaxaB">Taxa de crescimento anual do país</label>
+                <!--Item.7.4.11 -->
+                <input type="number" id="TaxaB" placeholder="Taxa de Crescimento do País B (%)">
+            </div>
+
+            <button type="button" onclick="CalcularAnos()"> Calcular </button>
+                <br> <br> <br> 
+                <button type=" button" onclick="LimparCampos()"> Limpar </button>
+        </form>
+        <div id="resultado"> </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
