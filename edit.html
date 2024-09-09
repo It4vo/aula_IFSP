@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Item</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Editar Item</h2>
+            <form action="{{ url_for('edit_item', item_id=item.id) }}" method="POST">
+                <label for="campo1">Campo 1:</label>
+                <input type="text" id="campo1" name="campo1" value="{{ item.campo1 }}" required>
+
+                <label for="campo2">Campo 2:</label>
+                <input type="text" id="campo2" name="campo2" value="{{ item.campo2 }}" required>
+
+                <label for="campo3">Campo 3:</label>
+                <input type="text" id="campo3" name="campo3" value="{{ item.campo3 }}" required>
+
+                <label for="campo4">Campo 4:</label>
+                <input type="text" id="campo4" name="campo4" value="{{ item.campo4 }}" required>
+
+                <button type="submit" class="btn-add">Salvar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
