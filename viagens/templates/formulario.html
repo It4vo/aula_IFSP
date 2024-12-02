@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Viagem</title>
+</head>
+<body>
+    <h1>Cadastro de Viagem</h1>
+
+    <form action="/add_viagem" method="POST">
+        <!-- Campo para o destino da viagem -->
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" required>
+        <br><br>
+
+        <!-- Campo para a data de ida -->
+        <label for="ida">Data de Ida:</label>
+        <input type="datetime-local" id="ida" name="ida" required>
+        <br><br>
+
+        <!-- Campo para a data de chegada -->
+        <label for="chegada">Data de Chegada:</label>
+        <input type="datetime-local" id="chegada" name="chegada" required>
+        <br><br>
+
+        <!-- Campo para o preço -->
+        <label for="preco">Preço (R$):</label>
+        <input type="number" step="0.01" id="preco" name="preco" required>
+        <br><br>
+
+        <!-- Botão para submeter o formulário -->
+        <button type="submit">Cadastrar Viagem</button>
+    </form>
+</body>
+</html>
